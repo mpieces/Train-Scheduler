@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <!-- Firebase Core JavaScript Link -->
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+     
+    <!-- Firebase Core JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 
-  <!-- Specific Firebase products we want (Database) -->
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <!-- Specific Firebase products we want (Database) -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- Link to Moment.js should go here -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
  
 </head>
 <body>
@@ -37,19 +41,12 @@
                             <th>Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="table-body">
                         <tr id="new-table-row">
-                           
+                          
                         </tr>
                     </tbody>
-
-
                 </table>
-
-
-
-
-
             </div>
         </div>
         <div class="card">
