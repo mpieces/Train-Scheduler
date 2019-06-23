@@ -9,9 +9,14 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!-- Firebase Core JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+
+  <!-- Specific Firebase products we want (Database) -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
  
 </head>
 <body>
@@ -33,8 +38,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
+                        <tr id="new-table-row">
+                           
                         </tr>
                     </tbody>
 
@@ -53,7 +58,7 @@
               <form>
                 <div class="form-group">
                     <label for="train-name">Train Name</label>
-                    <input type="text" class="form-control" id="-train-name">
+                    <input type="text" class="form-control" id="train-name">
                 </div>
                 <div class="form-group">
                         <label for="destination">Destination</label>
@@ -61,7 +66,7 @@
                 </div>
                 <div class="form-group">
                     <label for="first-train-time">First Train Time (HH:mm - military time)</label>
-                    <input type="text" class="form-control" id="first-train-time">
+                    <input type="time" class="form-control" id="first-train-time">
                 </div>
                 <div class="form-group">
                     <label for="frequency">Frequency (min)</label>
